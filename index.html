@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Calculadora</h1>
+
+        <div class="primeiroInput">
+            <input type="text" id="visor"disabled>
+        </div>
+
+        <div class="meio">
+            <div class="numeros">
+                <div class="numero">
+                    Número 1
+                    <input type="text" id="n1">
+                </div>
+
+                <div class="numero" id="classOperacao">
+                    <input type="text" id="operacao" disabled>
+                </div>
+
+                <div class="numero">
+                    Número 2
+                    <input type="text" id="n2">
+                </div>
+            </div>
+        </div>
+
+        <div class="operacoes">
+            <button onclick="somar()" id="soma">+</button>
+            <button onclick="subtrair()" id="subtracao">-</button>
+            <button onclick="multiplicar()" id="multiplicacao">x</button>
+            <button onclick="dividir()" id="divisao">/</button>
+        </div>
+    </div>
+
+        <footer> 
+            <p>&copy; Ana Luiza Almeida</p>
+        </footer>
+
+</body>
+</html>
